@@ -45,6 +45,8 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-moshi:2.9.0")
     //Para usar el adaptador de Moshi kotlin, que permite usar anotaciones especiales en las Data Class para la
     implementation("com.squareup.moshi:moshi-kotlin:1.15.0")
+    //Coil para renderizar imágenes de diversas fuentes (en este caso de una url)
+    implementation("io.coil-kt:coil:2.6.0")
 
     //Para usar viewModels en fragmentos
     implementation("androidx.fragment:fragment-ktx:1.6.2")

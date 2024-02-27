@@ -20,13 +20,12 @@
             tools:text="Un lindo gatito"
             android:textColor="@color/white"
             />
-
         <ImageView
             android:id="@+id/catImage"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="4"
-            android:scaleType="centerCrop"
+            android:scaleType="centerInside"
             tools:src="@drawable/b8n" />
     </LinearLayout>
 </com.google.android.material.card.MaterialCardView>

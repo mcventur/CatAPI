@@ -3,6 +3,7 @@ package com.mpd.pmdm.catapi.ui.adapters
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import coil.load
 import com.mpd.pmdm.catapi.data.remote.CatModel
 import com.mpd.pmdm.catapi.databinding.FragmentCatItemBinding
 
@@ -32,7 +33,9 @@ class MyCatItemRecyclerViewAdapter(
         RecyclerView.ViewHolder(binding.root) {
         fun bindData(cat: CatModel) {
             binding.catId.text = cat.id
-            //TODO: Falta mostrar la imagen
+            binding.catImage.load(cat.imgUrl){
+
+            }
         }
     }
 
