@@ -39,6 +39,16 @@ android {
 }
 
 dependencies {
+    //Retrofit
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    //Moshi para convertir Json a objetos Java/Kotlin
+    implementation("com.squareup.retrofit2:converter-moshi:2.9.0")
+    //Para usar el adaptador de Moshi kotlin, que permite usar anotaciones especiales en las Data Class para la
+    implementation("com.squareup.moshi:moshi-kotlin:1.15.0")
+
+    //Para usar viewModels en fragmentos
+    implementation("androidx.fragment:fragment-ktx:1.6.2")
+
 
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
