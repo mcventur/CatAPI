@@ -10,9 +10,10 @@ import retrofit2.Callback
 import retrofit2.Response
 
 class CatsRepository(val api: ApiService) {
-
-    fun fetchCats(): LiveData<List<CatModel>> {
-        val catList = MutableLiveData<List<CatModel>>()
+    //Declaro el mutableLiveData como atrubuto, para que siempre sea el mismo.
+    //Si no, en cada llamada se generaría uno nuevo y cualquier llamada antigua estaría observando los viejos
+    private val catList = MutableLiveData<List<CatModel>>()
+    fun fetchCats(): MutableLiveData<List<CatModel>> {
         val call = api.getCatImages(10)
 
         call.enqueue(object : Callback<List<CatModel>> {

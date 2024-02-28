@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">CatAPI</string>
+    <string name="more_Cats">Quiero más gatos!!</string>
 </resources>

@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -20,7 +21,7 @@ import com.mpd.pmdm.catapi.ui.viewmodel.CatsViewModelFactory
 class CatListFragment : Fragment() {
 
     private var columnCount = 2
-    private val catsViewModel: CatsViewModel by viewModels{ CatsViewModelFactory() }
+    private val catsViewModel: CatsViewModel by activityViewModels{ CatsViewModelFactory() }
     private lateinit var catsAdapter: MyCatItemRecyclerViewAdapter
 
     override fun onCreateView(
