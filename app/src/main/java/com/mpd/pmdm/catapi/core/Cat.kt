@@ -7,5 +7,5 @@ import android.net.Uri
  */
 data class Cat(
     val id: String,
-    val imgUrl: Uri
+    val imgUrl: String
 )
