@@ -39,6 +39,16 @@ android {
 }
 
 dependencies {
+    //Retrofit
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    //Moshi
+    implementation("com.squareup.retrofit2:converter-moshi:2.9.0")
+    implementation("com.squareup.moshi:moshi-kotlin:1.15.0")
+    //Coil para traer las imágenes
+    implementation("io.coil-kt:coil:2.6.0")
+
+    implementation("androidx.fragment:fragment-ktx:1.6.2")
+    implementation("androidx.activity:activity-ktx:1.8.2")
 
     val nav_version = "2.7.7"
     // Navigation
